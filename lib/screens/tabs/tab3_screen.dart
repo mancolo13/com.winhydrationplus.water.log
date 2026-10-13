@@ -16,7 +16,7 @@ class _Tab3ScreenState extends State<Tab3Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('WinHydrationPlus • Reminders')),
+      appBar: AppBar(title: const Text('Win • Reminders')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
