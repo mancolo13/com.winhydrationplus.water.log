@@ -16,10 +16,10 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _screens = const [
-    Tab1Screen(),
-    Tab2Screen(),
-    Tab3Screen(),
     Tab4Screen(),
+    Tab2Screen(),
+    Tab1Screen(),
+    Tab3Screen(),
   ];
 
   @override
@@ -33,9 +33,9 @@ class _MainScreenState extends State<MainScreen> {
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
         NavigationDestination(
-          icon: const Icon(Icons.water_drop_outlined),
-          selectedIcon: const Icon(Icons.water_drop, color: AppTheme.primaryColor),
-          label: 'Tracker',
+          icon: const Icon(Icons.show_chart_outlined),
+          selectedIcon: const Icon(Icons.show_chart, color: AppTheme.primaryColor),
+          label: 'Trends',
         ),
         NavigationDestination(
           icon: const Icon(Icons.format_list_bulleted_outlined),
@@ -43,16 +43,15 @@ class _MainScreenState extends State<MainScreen> {
           label: 'Logs',
         ),
         NavigationDestination(
+          icon: const Icon(Icons.water_drop_outlined),
+          selectedIcon: const Icon(Icons.water_drop, color: AppTheme.primaryColor),
+          label: 'Tracker',
+        ),
+        NavigationDestination(
           icon: const Icon(Icons.notifications_none_outlined),
           selectedIcon: const Icon(Icons.notifications, color: AppTheme.primaryColor),
           label: 'Reminders',
         ),
-        NavigationDestination(
-          icon: const Icon(Icons.show_chart_outlined),
-          selectedIcon: const Icon(Icons.show_chart, color: AppTheme.primaryColor),
-          label: 'Trends',
-        ),
-
         ],
       ),
     );
